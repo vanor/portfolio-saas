@@ -7,6 +7,7 @@
     <title>Learning bootstrap v5 with sass</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -71,15 +72,110 @@
                 <div class="col-md-6 intros text-end">
                     <div class="video-box">
                         <img src="images/arts/intro-illustration.png" alt="video illustration" class="img-fluid">
-                        <a href="#">
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
                             <span><i class="fas fa-play-circle"></i></span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L40,202.7C80,213,160,235,240,218.7C320,203,400,149,480,138.7C560,128,640,160,720,176C800,192,880,192,960,165.3C1040,139,1120,85,1200,80C1280,75,1360,117,1400,138.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     </section>
     <!-- intro section end -->
+
+
+    <!-- companies section -->
+    <section id="companies" class="companies">
+        <div class="container">
+            <div class="row text-center">
+                <h4 class="fw-bold lead mb-3">Trusted by companies like</h4>
+                <div class="heading-line mb-5"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-2">
+                    <div class="companies__logo-box shadow-sm">
+                        <img src="images/companies/company-1.png" alt="Company 1 logo" title="Company 1 Logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="companies__logo-box shadow-sm">
+                        <img src="images/companies/company-2.png" alt="Company 2 logo" title="Company 2 Logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="companies__logo-box shadow-sm">
+                        <img src="images/companies/company-3.png" alt="Company 3 logo" title="Company 3 Logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="companies__logo-box shadow-sm">
+                        <img src="images/companies/company-4.png" alt="Company 4 logo" title="Company 4 Logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="companies__logo-box shadow-sm">
+                        <img src="images/companies/company-5.png" alt="Company 5 logo" title="Company 5 Logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="companies__logo-box shadow-sm">
+                        <img src="images/companies/company-6.png" alt="Company 6 logo" title="Company 6 Logo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- companies section end -->
+
+    <!-- services section -->
+    <section id="services" class="our-services">
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="display-3 fw-bold">Our services</h1>
+                <div class="heading-line mb-5"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row pt-2 pb-2 mt-5 mb-3">
+                <div class="col-md-6">
+                    <div class="bg-white p-3">
+                        <h2 class="fw-bold text-capitalize text-center">
+                            Our Services Range From Initial Design To Deployment Anywhere Anytime
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white p-4 text-start">
+                        <p class="fw-light">
+                            Lorem ipsum dolor sit amet consectetur architecto magni, dicta maxime laborum
+                            temporibus dolorem esse doloremque illo quas nisi enim molestias. Tempore 
+                            ducimus molestiae in dolore enim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section end -->
+
+    <script src="/assets/vendors/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            href: 'https://www.youtube.com/watch?v=iJKCj8uAHz8',
+            type: 'video',
+            source: 'youtube',
+            width: 900,
+            autoPlayVideos: true
+        });
+    </script>
 
     <script src="/assets/js/bootstrap.bundle.js"></script>
 </body>
